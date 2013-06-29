@@ -64,4 +64,6 @@ set shiftwidth=4
 
 " autoindent with two spaces, always expand tabs
 autocmd filetype ruby,eruby,yaml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd filetype sh setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd filetype html,htm setlocal shiftwidth=2 softtabstop=2 expandtab
 
