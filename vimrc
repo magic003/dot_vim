@@ -13,6 +13,8 @@ Bundle 'gmarik/vundle'
 " ---------------------------
 "  My Bundles
 " ---------------------------
+Bundle 'https://github.com/fholgado/minibufexpl.vim.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on               " required!
@@ -66,4 +68,21 @@ set shiftwidth=4
 autocmd filetype ruby,eruby,yaml setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd filetype sh setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd filetype html,htm setlocal shiftwidth=2 softtabstop=2 expandtab
+
+" ------------------
+"  Key Mappings
+" ------------------
+
+let mapleader = ","
+
+" minibufexpl.vim
+
+nnoremap <Leader>f  :MBEFocus<cr>
+nnoremap <Leader>bn :MBEbn<cr>
+nnoremap <Leader>bp :MBEbp<cr>
+nnoremap <Leader>bf :MBEbf<cr>
+nnoremap <Leader>bb :MBEbb<cr>
+nnoremap <Leader>bd :MBEbd<cr>
+nnoremap <Leader>bw :MBEbw<cr>
+nnoremap <Leader>bu :MBEbun<cr>
 
