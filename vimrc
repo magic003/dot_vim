@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " ---------------------------
 Bundle 'https://github.com/fholgado/minibufexpl.vim.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/magic003/vim-rubytest.git'
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on               " required!
@@ -86,3 +87,5 @@ nnoremap <Leader>bd :MBEbd<cr>
 nnoremap <Leader>bw :MBEbw<cr>
 nnoremap <Leader>bu :MBEbun<cr>
 
+" rubytest.vim
+let g:rubytest_in_quickfix = 1
