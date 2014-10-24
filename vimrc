@@ -4,25 +4,27 @@
 set nocompatible                        " We're running Vim, not Vi!
 filetype off                            " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle. " required!
-Bundle 'gmarik/vundle'                  
+Plugin 'gmarik/Vundle.vim'                  
 
 " ---------------------------
 "  My Bundles
 " ---------------------------
-Bundle 'https://github.com/fholgado/minibufexpl.vim.git'
-Bundle 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'https://github.com/fholgado/minibufexpl.vim.git'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
 
-Bundle 'https://github.com/majutsushi/tagbar.git'
+Plugin 'https://github.com/majutsushi/tagbar.git'
 
 " ruby
-Bundle 'https://github.com/magic003/vim-rubytest.git'
+Plugin 'https://github.com/magic003/vim-rubytest.git'
 
 " dart
-Bundle 'https://github.com/dart-lang/dart-vim-plugin.git'
+Plugin 'https://github.com/dart-lang/dart-vim-plugin.git'
+
+call vundle#end()
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on               " required!
