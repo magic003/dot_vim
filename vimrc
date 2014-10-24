@@ -16,6 +16,8 @@ Bundle 'gmarik/vundle'
 Bundle 'https://github.com/fholgado/minibufexpl.vim.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 
+Bundle 'https://github.com/majutsushi/tagbar.git'
+
 " ruby
 Bundle 'https://github.com/magic003/vim-rubytest.git'
 
@@ -51,6 +53,7 @@ set directory=~/.vim/data/swap
 " ----------------
 set nu
 set colorcolumn=80
+set mouse=a
 
 " ---------------
 "  Behaviors
@@ -91,6 +94,10 @@ nnoremap <Leader>bb :MBEbb<cr>
 nnoremap <Leader>bd :MBEbd<cr>
 nnoremap <Leader>bw :MBEbw<cr>
 nnoremap <Leader>bu :MBEbun<cr>
+nnoremap <Leader>bu :MBEbun<cr>
+
+nnoremap <Leader>. :CtrlPTag<cr>
+nnoremap <Leader>o :TagbarToggle<cr>
 
 " rubytest.vim
 "let g:rubytest_in_quickfix = 1
