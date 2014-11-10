@@ -24,6 +24,9 @@ Plugin 'https://github.com/magic003/vim-rubytest.git'
 " dart
 Plugin 'https://github.com/dart-lang/dart-vim-plugin.git'
 
+" rust
+Plugin 'http://github.com/wting/rust.vim'
+
 call vundle#end()
 
 " Automatically detect file types. (must turn on after Vundle)
