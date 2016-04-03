@@ -57,7 +57,7 @@ set directory=~/.vim/data/swap
 "  UI
 " ----------------
 set nu
-set colorcolumn=80
+set colorcolumn=120
 set mouse=a
 
 " ---------------
