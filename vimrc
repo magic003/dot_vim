@@ -27,6 +27,11 @@ Plugin 'https://github.com/dart-lang/dart-vim-plugin.git'
 " rust
 Plugin 'http://github.com/wting/rust.vim'
 
+" go
+Plugin 'fatih/vim-go'
+
+Plugin 'Shougo/neocomplete.vim'
+
 call vundle#end()
 
 " Automatically detect file types. (must turn on after Vundle)
@@ -73,6 +78,8 @@ set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set list
+set listchars=eol:⏎,tab:»·,trail:␠,extends:>,precedes:<,space:⎵
 
 " ------------------
 "  Auto Commands
@@ -106,3 +113,23 @@ nnoremap <Leader>o :TagbarToggle<cr>
 
 " rubytest.vim
 "let g:rubytest_in_quickfix = 1
+
+" ------------------
+"  vim-go settings
+" ------------------
+let g:go_highlight_operators = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_auto_type_info = 1
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
+
+
+" ------------------
+"  neocomplete
+" ------------------
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+set completeopt-=preview
