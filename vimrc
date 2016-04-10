@@ -63,7 +63,7 @@ set directory=~/.vim/data/swap
 " ----------------
 set nu
 set colorcolumn=120
-set mouse=a
+"set mouse=a
 
 " ---------------
 "  Behaviors
