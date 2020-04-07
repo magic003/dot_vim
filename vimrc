@@ -25,7 +25,7 @@ Plugin 'https://github.com/magic003/vim-rubytest.git'
 Plugin 'https://github.com/dart-lang/dart-vim-plugin.git'
 
 " rust
-Plugin 'http://github.com/wting/rust.vim'
+Plugin 'http://github.com/rust-lang/rust.vim'
 
 " go
 Plugin 'fatih/vim-go'
