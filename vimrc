@@ -32,6 +32,8 @@ Plugin 'fatih/vim-go'
 
 Plugin 'Shougo/neocomplete.vim'
 
+Plugin 'ollykel/v-vim'
+
 call vundle#end()
 
 " Automatically detect file types. (must turn on after Vundle)
@@ -126,6 +128,8 @@ let g:go_auto_type_info = 1
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 
+" Enable automatically formatting file via "v fmt -" before writing buffer.⏎                                            
+let g:v_autofmt_bufwritepre = 1
 
 " ------------------
 "  neocomplete
